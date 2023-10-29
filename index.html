@@ -22,7 +22,7 @@
             <h4>Membership</h4>
             <h4>Write</h4>
             <h4>Sign In</h4>
-            <button class="change-button">Get started</button>
+            <button id="changeButton2">Get started</button>
           </div>
         </div>
       </nav>
@@ -9609,15 +9609,17 @@
           <div class="container-right-part">
             <div class="buttons">
               <h2>DISCOVER MORE OF WHAT MATTERS TO YOU</h2>
-              <button>Programming</button>
-              <button>Data Science</button>
-              <button>Technology</button>
-              <button>Self Improvement</button>
-              <button>Writing</button>
-              <button>Relationships</button>
-              <button>Machine Learning</button>
-              <button>Productivity</button>
-              <button>Politics</button>
+              <button class="bottoni">Programming</button>
+              <button class="bottoni">Data Science</button>
+
+              <button class="bottoni">Technology</button>
+              <button class="bottoni">Self Improvement</button>
+              <button class="bottoni">Writing</button>
+
+              <button class="bottoni">Relationships</button>
+              <button class="bottoni">Machine Learning</button>
+              <button class="bottoni">Productivity</button>
+              <button class="bottoni">Politics</button>
             </div>
             <div class="list">
               <div>
@@ -9638,5 +9640,22 @@
         </div>
       </footer>
     </div>
+    <script>
+      let body = document.getElementsByTagName("nav")[0];
+      let button = document.getElementById("changeButton2");
+      body.style.backgroundColor = "#ffc017";
+      button.style.backgroundColor = "black";
+
+      window.onscroll = function (event) {
+        let scroll = window.pageYOffset;
+        if (scroll < 300) {
+          body.style.backgroundColor = "#ffc017";
+          button.style.backgroundColor = "black";
+        } else if (scroll >= 400 && scroll < 600) {
+          body.style.backgroundColor = "white";
+          button.style.backgroundColor = "green";
+        }
+      };
+    </script>
   </body>
 </html>
