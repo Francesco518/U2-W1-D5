@@ -188,7 +188,7 @@
 
 .left-part {
   width: 65%;
-  overflow: scroll;
+
   height: 100vh;
 }
 
@@ -257,6 +257,8 @@
   padding: 13px;
   background-color: white;
   border: 2px solid rgba(46, 42, 42, 0.215);
+  position: sticky;
+  top: 100px;
 }
 
 .buttons {
@@ -273,4 +275,9 @@
   list-style-type: none;
   gap: 20px;
   font-size: 27px;
+}
+
+.left-part button {
+  border-radius: 50px;
+  border: none;
 }
